@@ -35,9 +35,9 @@ def main():
 
     # Endpoint duty cycles (tune per servo; too big => buzzing, too small => short travel)
     s1_min = rospy.get_param("~servo1_min_duty", 2.5)  # ~0.5 ms pulse
-    s1_max = rospy.get_param("~servo1_max_duty", 12.5)  # ~2.5 ms pulse
+    s1_max = rospy.get_param("~servo1_max_duty", 5.0)  # ~2.5 ms pulse
     s2_min = rospy.get_param("~servo2_min_duty", 2.5)
-    s2_max = rospy.get_param("~servo2_max_duty", 12.5)
+    s2_max = rospy.get_param("~servo2_max_duty", 5.2)
     s1_invert = rospy.get_param("~servo1_invert", False)
     s2_invert = rospy.get_param("~servo2_invert", False)
 
